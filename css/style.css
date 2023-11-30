@@ -60,10 +60,6 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-.header-content nav {
-  /* vertical-align: middle; */
-}
-
 .left-nav {
   display: flex;
   align-items: flex-end;
@@ -81,8 +77,7 @@ nav li {
 }
 
 header {
-  height: 775px;
-
+  min-height: 775px;
   background-color: rgb(180, 208, 231);
 }
 
@@ -93,7 +88,7 @@ header {
 
 .jumbo-columns {
   display: flex;
-  height: 500px;
+  min-height: 500px;
 }
 
 .jumbo-small-column {
@@ -112,7 +107,6 @@ header {
 .jumbo-small-column .button {
   width: 250px;
   margin-bottom: var(--margin-text);
-  /* padding: 15px 20px; */
 }
 
 .jumbo-small-column i {
@@ -175,6 +169,8 @@ input[type="radio"] {
   justify-content: space-between;
   gap: 23px;
   height: 1000px;
+
+  /* debug */
   /* background-color: antiquewhite; */
 }
 
@@ -256,7 +252,7 @@ input[type="radio"] {
 
 .business-columns .col-big {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
 }
 
 .business-columns .business-card:last-of-type .card-container {
@@ -281,7 +277,7 @@ input[type="radio"] {
 .partner {
   margin-top: 500px;
   margin-bottom: 100px;
-  height: 500px;
+  min-height: 500px;
   /* background-color: antiquewhite; */
   display: flex;
 }
@@ -308,7 +304,7 @@ input[type="radio"] {
 }
 
 .more-operation {
-  height: 1000px;
+  min-height: 1000px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -340,7 +336,7 @@ input[type="radio"] {
 }
 
 .clients .text-box {
-  height: 150px;
+  min-height: 150px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -437,4 +433,39 @@ input[type="radio"] {
 
 #square-8 {
   background-color: #ffd830;
+}
+
+/* prova gratuita */
+.free-trial {
+  background-color: #b4d0e7;
+}
+
+.free-trial .container {
+  padding: 130px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.free-trial h2 {
+  font-size: 2.5rem;
+  max-width: 50%;
+}
+
+/* faq */
+.faq {
+  padding: 150px 0;
+}
+
+.faq-list {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--margin-text) 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  padding-bottom: var(--margin-text);
 }
