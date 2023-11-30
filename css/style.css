@@ -1,3 +1,7 @@
+:root {
+  --header-height: 80px;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -23,4 +27,39 @@ a {
   text-decoration: none;
 }
 
+.button {
+  padding: 10px 15px;
+  background-color: #1b71ff;
+  color: white;
+}
+
 /* UTILS */
+
+/* HEADER */
+.header-content {
+  min-height: var(--header-height);
+  /* line-height: var(--header-height); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+
+  /* debug */
+  background-color: antiquewhite;
+}
+
+.header-content nav {
+  /* vertical-align: middle; */
+}
+
+.left-nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right-nav {
+}
+
+nav li {
+  padding: 0 20px;
+}
