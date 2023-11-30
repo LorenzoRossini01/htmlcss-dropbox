@@ -2,6 +2,7 @@
   --header-height: 80px;
   --space-basis: 20px;
   --margin-text: 2.5rem;
+  --border-color: rgb(212, 212, 212);
 }
 
 /* RESET */
@@ -150,12 +151,12 @@ main {
 }
 
 input[type="radio"] {
-  width: 2rem;
-  height: 2rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .business-header label {
-  line-height: 2rem;
+  line-height: 1.4rem;
   vertical-align: top;
   padding-left: 0.5rem;
   padding-right: var(--space-basis);
@@ -174,19 +175,19 @@ input[type="radio"] {
   justify-content: space-between;
   gap: 23px;
   height: 1000px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 /* card */
 .business-card {
-  background-color: white;
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--border-color);
 }
 
 .card-header {
   text-align: center;
   padding: var(--space-basis) 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .card-container {
@@ -251,4 +252,57 @@ input[type="radio"] {
 
 .card-footer i {
   color: rgb(35, 112, 255);
+}
+
+.business-columns .col-big {
+  width: 100%;
+  height: 300px;
+}
+
+.business-columns .business-card:last-of-type .card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.business-columns .business-card:last-of-type .card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--margin-text);
+}
+
+.business-columns .business-card:last-of-type .button {
+  width: 350px;
+}
+
+/* partner dropbox */
+
+.partner {
+  margin-top: 500px;
+  margin-bottom: 1000px;
+  height: 500px;
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.partner .partner-col-big {
+  width: 60%;
+  background-color: aqua;
+}
+.partner .partner-col-small {
+  width: 40%;
+  background-color: azure;
+  padding: var(--margin-text);
+}
+
+.partner-col-small p {
+  padding: var(--margin-text) 0;
+}
+
+.partner-col-small .button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  width: 200px;
 }
