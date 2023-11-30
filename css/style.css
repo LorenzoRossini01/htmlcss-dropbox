@@ -1,6 +1,7 @@
 :root {
   --header-height: 80px;
   --space-basis: 20px;
+  --margin-text: 2.5rem;
 }
 
 /* RESET */
@@ -29,12 +30,17 @@ a {
 }
 
 .button {
-  padding: 10px 15px;
+  padding: 15px 20px;
   background-color: #1b71ff;
   color: white;
 }
 
 /* UTILS */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 1000px;
+}
 
 /* HEADER */
 .header-content {
@@ -46,7 +52,7 @@ a {
   flex-shrink: 1;
 
   /* debug */
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 
 .header-content nav {
@@ -64,4 +70,63 @@ a {
 
 nav li {
   padding: 0 var(--space-basis);
+}
+
+/* JUMBO */
+.jumbo .container {
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+header {
+  height: 775px;
+
+  background-color: rgb(180, 208, 231);
+}
+
+.jumbo h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.jumbo-columns {
+  display: flex;
+  height: 500px;
+}
+
+.jumbo-small-column {
+  padding-top: 30px;
+  width: 30%;
+
+  /* debug */
+  /* background-color: antiquewhite; */
+}
+
+.jumbo-small-column p {
+  font-size: 1.1rem;
+  padding-bottom: var(--margin-text);
+}
+
+.jumbo-small-column .button {
+  width: 250px;
+  margin-bottom: var(--margin-text);
+  /* padding: 15px 20px; */
+
+  text-align: center;
+}
+
+.jumbo-small-column i {
+  font-weight: bold;
+}
+
+.jumbo-big-column {
+  width: 70%;
+
+  /* debug */
+  /* background-color: rgb(210, 197, 182); */
+}
+
+.jumbo-big-column img {
+  position: relative;
+  top: 30px;
 }
