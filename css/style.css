@@ -332,3 +332,28 @@ input[type="radio"] {
   padding-bottom: var(--space-basis);
   font-size: 1.4rem;
 }
+
+.clients {
+  /* background-color: antiquewhite; */
+  margin-top: var(--margin-text);
+  margin-bottom: 150px;
+}
+
+.clients .text-box {
+  height: 150px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clients .text-box h2 {
+  font-size: 2.5rem;
+}
+
+.clients .text-box a {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: blue;
+  /* margin-top: 100px; */
+}
