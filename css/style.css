@@ -1,5 +1,6 @@
 :root {
   --header-height: 80px;
+  --space-basis: 20px;
 }
 
 /* RESET */
@@ -55,11 +56,12 @@ a {
 .left-nav {
   display: flex;
   align-items: flex-end;
+  margin-left: var(--space-basis);
 }
 
 .right-nav {
 }
 
 nav li {
-  padding: 0 20px;
+  padding: 0 var(--space-basis);
 }
