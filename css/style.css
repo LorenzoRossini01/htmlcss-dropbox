@@ -280,7 +280,7 @@ input[type="radio"] {
 
 .partner {
   margin-top: 500px;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
   height: 500px;
   background-color: antiquewhite;
   display: flex;
@@ -305,4 +305,30 @@ input[type="radio"] {
   border: 1px solid black;
   color: black;
   width: 200px;
+}
+
+.more-operation {
+  height: 1000px;
+  background-color: rgb(255, 255, 255);
+}
+
+.more-operation h2 {
+  font-size: 2.2rem;
+}
+
+.operation-cards {
+  margin-top: var(--margin-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--margin-text);
+}
+
+.operation-cards .card {
+  width: calc(100% / 3 - var(--margin-text));
+}
+
+.operation-cards .card h3 {
+  padding-bottom: var(--space-basis);
+  font-size: 1.4rem;
 }
