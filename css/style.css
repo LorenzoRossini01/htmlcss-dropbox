@@ -41,7 +41,7 @@ a {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  height: 1000px;
+  height: auto;
 }
 
 .col-3 {
@@ -356,4 +356,85 @@ input[type="radio"] {
   text-decoration: underline;
   color: blue;
   /* margin-top: 100px; */
+}
+
+/* square */
+.square {
+  display: flex;
+}
+
+.big-square {
+  height: calc(100vw / 3);
+  width: calc(100% / 3);
+  background-color: rgb(247, 202, 205);
+  /* border: 1px dashed black; */
+}
+
+.square-center {
+  padding: var(--margin-text);
+}
+
+.square-center img {
+  max-width: 60%;
+}
+
+.square-center p:first-of-type {
+  padding: calc(var(--margin-text) + 1rem) 0;
+}
+
+.small-squares {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-squares div {
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  /* background-color: #1b71ff;
+  border: 1px dashed white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-squares div > img {
+  width: 50%;
+  color: rgb(247, 202, 205);
+}
+.small-squares .smaller-square {
+  width: calc(100% - 10%);
+  height: calc(100% - 10%);
+  background-color: #a2d39b;
+}
+
+#square-1 {
+  background-color: #d1e9cd;
+}
+
+#square-2 {
+  background-color: #61082b;
+}
+
+#square-3 {
+  background-color: #0093ce;
+}
+
+#square-4 {
+  background-color: #ff1c1c;
+}
+
+#square-5 {
+  background-color: #d5001f;
+}
+
+#square-6 {
+  background-color: #b4d0e7;
+}
+
+#square-7 {
+  background-color: #0d2481;
+}
+
+#square-8 {
+  background-color: #ffd830;
 }
