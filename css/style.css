@@ -282,17 +282,17 @@ input[type="radio"] {
   margin-top: 500px;
   margin-bottom: 100px;
   height: 500px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   display: flex;
 }
 
 .partner .partner-col-big {
   width: 60%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .partner .partner-col-small {
   width: 40%;
-  background-color: azure;
+  /* background-color: azure; */
   padding: var(--margin-text);
 }
 
