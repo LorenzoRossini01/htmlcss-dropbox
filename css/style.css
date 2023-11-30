@@ -37,6 +37,11 @@ a {
   text-align: center;
 }
 
+.button:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
 /* UTILS */
 .container {
   max-width: 1000px;
@@ -304,6 +309,10 @@ input[type="radio"] {
   width: 200px;
 }
 
+.partner-col-small .button:hover {
+  filter: brightness(0.9);
+}
+
 .more-operation {
   min-height: 1000px;
   background-color: rgb(255, 255, 255);
@@ -467,6 +476,13 @@ input[type="radio"] {
   font-weight: 800;
 }
 
+.faq-list:hover {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid white;
+
+  cursor: pointer;
+}
+
 .faq h2 {
   font-size: 2.5rem;
   padding-bottom: var(--margin-text);
@@ -500,6 +516,11 @@ input[type="radio"] {
   font-size: 1rem;
 }
 
+.footer-columns ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer .lang {
   display: flex;
   gap: 20px;
@@ -507,4 +528,8 @@ input[type="radio"] {
   font-weight: lighter;
   padding: var(--margin-text) 0;
   border-top: 1px solid grey;
+}
+
+.footer .lang .lang-select:hover {
+  border: 1px solid white;
 }
