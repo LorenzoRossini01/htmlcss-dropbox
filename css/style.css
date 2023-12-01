@@ -168,12 +168,17 @@ main {
   font-size: 3rem;
 }
 
-.business-input {
-}
-
 input[type="radio"] {
   width: 1.4rem;
   height: 1.4rem;
+}
+
+.check-circle {
+  display: inline-block;
+  width: 1.4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px solid #0262ff;
 }
 
 .business-header label {
@@ -397,7 +402,7 @@ input[type="radio"] {
 .big-square {
   height: calc(100vw / 3);
   width: calc(100vw / 3);
-  background-color: rgb(247, 202, 205);
+  background-color: #f5f5f5;
   /* border: 1px dashed black; */
 }
 
@@ -437,7 +442,7 @@ input[type="radio"] {
 
 .small-squares div > img {
   width: 50%;
-  color: rgb(247, 202, 205);
+  filter: invert(1);
 }
 .small-squares .smaller-square {
   width: calc(100% - 10%);
