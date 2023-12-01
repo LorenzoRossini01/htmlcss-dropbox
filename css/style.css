@@ -1,7 +1,7 @@
 :root {
   --header-height: 80px;
   --space-basis: 20px;
-  --margin-text: 2.5rem;
+  --margin-text: 1.5rem;
   --border-color: rgb(212, 212, 212);
 }
 
@@ -42,7 +42,7 @@ a {
 }
 
 .button:hover {
-  filter: brightness(1.25);
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -79,16 +79,18 @@ header {
 
 .left-nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-left: var(--space-basis);
 }
 
-nav li {
+nav li a {
   padding: 0 var(--space-basis);
+  display: inline-block;
+  line-height: var(--header-height);
 }
 
-nav li:hover {
-  text-decoration: underline;
+nav li a:hover {
+  box-shadow: 0px 3px 0px 0px;
 }
 
 /* JUMBO */
@@ -333,7 +335,7 @@ input[type="radio"] {
 }
 
 .partner-col-small .button:hover {
-  filter: brightness(0.9);
+  opacity: 0.7;
 }
 
 .more-operation {
@@ -394,21 +396,28 @@ input[type="radio"] {
 
 .big-square {
   height: calc(100vw / 3);
-  width: calc(100% / 3);
+  width: calc(100vw / 3);
   background-color: rgb(247, 202, 205);
   /* border: 1px dashed black; */
 }
 
 .square-center {
-  padding: var(--margin-text);
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vw / 3 - calc(3vw * 2));
 }
 
 .square-center img {
   max-width: 60%;
 }
 
+.square-center p {
+  font-size: 1vw;
+}
+
 .square-center p:first-of-type {
-  padding: calc(var(--margin-text) + 1rem) 0;
+  padding: 5vw 0;
 }
 
 .small-squares {
@@ -499,11 +508,20 @@ input[type="radio"] {
   font-weight: 800;
 }
 
-.faq-list:hover {
-  background-color: rgb(240, 240, 240);
-  border: 1px solid white;
+.faq-list .faq-text p {
+  font-weight: 550;
+  font-size: 0.9rem;
+  padding-top: var(--space-basis);
+  width: 80%;
+  display: none;
+}
 
+.faq-list:hover {
   cursor: pointer;
+}
+
+.faq-list:hover p {
+  display: inline-block;
 }
 
 .faq h2 {
